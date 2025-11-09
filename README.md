@@ -52,19 +52,32 @@ Run `python main.py` to start the game.
 -   Right click: Place an animal
 -   R key: Reset evolution to starting values
 -   Close window: Quit game
+-   Arrow keys: Pan camera
+-   Mouse wheel: Zoom in/out
+-   F11: Toggle fullscreen
+-   F1: Toggle FPS benchmark (samples 300 frames, shows avg/min/max)
+-   FPS counter in sidebar
+-   Legend and stats displayed
+
+## Rendering Improvements
+
+- Pre-rendered terrain surface with subtle per-tile color variation
+- smoothscale for zoom<1
+
+## Camera
+
+- Clamped zoom with additive zoom_by() behavior
+
+## Performance & Population Tweaks (Nov 2025)
+
+- Quick wins applied: Human energy 300->400; Child 400->500; Reproduction cost 15->9; Max reproductive age 200->350; Food regrow +~40%.
+- Headless test (100 ticks): Final population ~19, avg tick ~0.037s.
 
 ## Evolution Persistence
 
 Human evolution (average traits) is automatically saved to `evolution.json` and persists between game sessions. When you restart the game, new humans will start with the evolved traits from the previous session.
 
 Press **R** to reset evolution back to default starting values.
-
-## Controls
-
-- Left click: Place a human
-- Right click: Place an animal
-- R key: Reset evolution to starting values
-- Close window: Quit game
 
 ## Terrain
 
@@ -103,6 +116,7 @@ Humans start with baseline traits and learn from their environment. Over time, t
 - Larger populations increase the chance of invention and cultural spread.
 - Behaviors like cooperate and share_food improve group survival.
 - Merging is rare and requires two adjacent humans that both know merge.
+- Delete evolution.json to reset; note that starting population grows slowly and is mechanics-limited, not CPU-bound.
 
 ## Future Enhancements
 

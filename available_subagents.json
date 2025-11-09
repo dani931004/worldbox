@@ -1,0 +1,13 @@
+[
+  {"name": "planning", "description": "Expert in project planning and management, using methodologies like Agile and tools for risk assessment and timelines."},
+  {"name": "implement-agent", "description": "A subagent specialized in implementing code changes, creating, modifying, and deleting files, and handling text-related tasks in codebases."},
+  {"name": "tester-agent", "description": "Expert at testing scripts, environments, and other testing-related tasks."},
+  {"name": "analyser-agent", "description": "Expert at analyzing issues, log files, and other data to explain problems, suggest fixes, and provide actionable next steps."},
+  {"name": "github-agent", "description": "Expert subagent for GitHub PR management, GitHub Copilot CLI integration, code reviews, and repository operations."},
+  {"name": "optimizations", "description": "Expert in code optimizations, focusing on performance, memory, and algorithmic improvements."},
+  {"name": "internet-researcher", "description": "Expert at researching topics on the internet and providing concise, accurate summaries of findings."},
+  {"name": "pr-review", "description": "Expert in pull request reviews, focusing on code quality, best practices, and adherence to project standards."},
+  {"name": "subagent-creator", "description": "Creates new subagents by generating and writing valid Markdown configuration files to the agents folder"},
+  {"name": "helper-script-expert", "description": "Expert in creating and executing helper scripts (Bash, Python, etc.) to assist the primary agent with tasks like file manipulation, data processing, or tool automation when direct tool use is inefficient."},
+  {"name": "workflow-log-expert", "description": "Expert at examining GitHub workflow logs, identifying issues, and suggesting fixes"}
+]
